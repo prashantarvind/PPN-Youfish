@@ -41,8 +41,6 @@ public class MainActivity extends AppCompatActivity {
 //        mWebView = (WebView) findViewById(R.id.webView);
 
         mWebView = (AdvancedWebView) findViewById(R.id.webview);
-        mWebView.loadUrl("https://www.thepublicplace.online/en/channel/youfishtv");
-
         progressBar.setVisibility(View.VISIBLE);
         mWebView.setWebViewClient(new Browser_home());
         mWebView.setWebChromeClient(new MyChrome());
