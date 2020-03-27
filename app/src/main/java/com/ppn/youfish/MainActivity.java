@@ -36,7 +36,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-//        new FinestWebView.Builder(this).show("https://www.thepublicplace.online/en/channel/youfishtv");
 
         progressBar = (ProgressBar) findViewById(R.id.progressBar);
 //        mWebView = (WebView) findViewById(R.id.webView);
@@ -47,8 +46,6 @@ public class MainActivity extends AppCompatActivity {
         progressBar.setVisibility(View.VISIBLE);
         mWebView.setWebViewClient(new Browser_home());
         mWebView.setWebChromeClient(new MyChrome());
-//        String userAgent = "Mozilla/5.0 (Linux; Android 4.4; Nexus 5 Build/_BuildID_) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36";
-//        mWebView.getSettings().setUserAgentString(userAgent);
         mWebView.setWebViewClient(new WebViewClient(){
             @Override
             public boolean shouldOverrideUrlLoading(WebView view, String url) {
